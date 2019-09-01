@@ -1,0 +1,24 @@
+<!--pages/home/home.wxml-->
+<text>pages/home/home.wxml</text>
+<!-- 1.x小程序的数据绑定 Mustache语法{{}},双大括号-->
+<view>Hello {{name}}</view>
+
+<!-- 2.微信小程序列表渲染 -->
+<view wx:for='{{students}}'>{{item.name}}--{{item.age}}</view>
+
+<!-- 3.事件监听 -->
+<view>当前计数:{{counter}}</view>
+<button size="mini" bindtap="handleBtnClick">+</button>
+<button size="mini" bindtap="handleBtnSubtraction">-</button>
+
+<!-- 获取用户信息 -->
+<button bindgetuserinfo="handleGetUserInfo" open-type="getUserInfo">获取用户信息</button>
+
+<!-- 展示用户信息 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+
+<view bindtap="handleView">哈哈哈哈</view>
+
+<view wx:for='{{list}}'>{{item.name}}--{{item.order}}</view>
+
