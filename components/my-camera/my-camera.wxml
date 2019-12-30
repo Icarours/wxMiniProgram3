@@ -1,0 +1,14 @@
+<!--components/my-camera/my-camera.wxml-->
+<camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 100%;" hidden="{{!isVisible}}">
+
+  <cover-image class='btnTakePic' bindtap="takePhoto" src="/assets/image/camera.png"></cover-image>
+</camera>
+
+<view style="width: 100%; height: 100%;" hidden="{{isVisible}}">
+  <image src="{{path}}" bindtap="preview" data-path="{{path}}" style="width: 100%; height: 100%;">
+  </image>
+  <view class='btnTakePic2'>
+    <button class="btn" size="mini" bindtap="retakePic">重拍</button>
+    <button class="btn" size="mini" bindtap="submit">提交</button>
+  </view>
+</view>

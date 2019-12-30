@@ -1,4 +1,2 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
-
-<view>知识点1</view>
+<my-camera></my-camera>
